@@ -8,7 +8,7 @@ describe('Your HTML Page', function() {
   before(function(next) {
     jsdom.env(
       file,
-      ["http://code.jquery.com/jquery.js"],
+      ["http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"],
       function (err, w) {
         if(err) { next(err); }
         window = w;
